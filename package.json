@@ -4,7 +4,9 @@
   "description": "It is an array extensions that can be used javascript and node.js.",
   "main": "./src/array.extensions.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,11 @@
     "url": "https://github.com/powerumc/array-extensions/issues"
   },
   "_from": "js-array-extensions@",
-  "homepage": "https://github.com/powerumc/array-extensions"
+  "homepage": "https://github.com/powerumc/array-extensions",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
